@@ -15,23 +15,21 @@
   ~ under the License.                                                        ~
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<resources>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="rocks.molarialessandro.vegapp.app.SplashScreenPageFragment">
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Material">
-        <!-- Main theme colors -->
-        <!--   your app branding color for the app bar -->
-        <item name="android:colorPrimary">@color/md_green_500</item>
-        <!--   darker variant for the status bar and contextual app bars -->
-        <item name="android:colorPrimaryDark">@color/md_green_700</item>
-        <!--   theme UI controls like checkboxes and text fields -->
-        <item name="android:colorAccent">@color/md_orange_A200</item>
-    </style>
+    <ImageView android:id="@+id/splashscreen" android:layout_width="wrap_content"
+               android:layout_height="fill_parent"
+               android:layout_gravity="center"
+               android:contentDescription="@string/splashscreenpage_background"/>
 
-    <style name="AppTheme.NoTitle">
-        <item name="android:windowNoTitle">true</item>
-        <!-- Support library compatibility. -->
-        <item name="windowActionBar">false</item>
-    </style>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
 
-</resources>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+</FrameLayout>
